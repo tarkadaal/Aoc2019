@@ -1,0 +1,34 @@
+{
+  "name": "aoc2019",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node lib/index.js",
+    "test": "jest --runInBand --verbose=false",
+    "build": "./node_modules/.bin/babel src -d lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tarkadaal/Aoc2019.git"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "transform": {
+      "^.+\\.jsx?$": "babel-jest"
+    }
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tarkadaal/Aoc2019/issues"
+  },
+  "homepage": "https://github.com/tarkadaal/Aoc2019#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.7.4",
+    "@babel/core": "^7.0.0",
+    "@babel/plugin-transform-modules-commonjs": "^7.7.4",
+    "@babel/preset-env": "^7.7.4",
+    "babel-jest": "^24.9.0"
+  }
+}
