@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node lib/index.js",
-    "test": "jest --runInBand --verbose=false",
+    "test": "./node_modules/.bin/jest  ./src --runInBand --verbose=false",
     "build": "./node_modules/.bin/babel src -d lib"
   },
   "repository": {
@@ -29,6 +29,7 @@
     "@babel/core": "^7.0.0",
     "@babel/plugin-transform-modules-commonjs": "^7.7.4",
     "@babel/preset-env": "^7.7.4",
-    "babel-jest": "^24.9.0"
+    "babel-jest": "^24.9.0",
+    "jest": "^24.9.0"
   }
 }
