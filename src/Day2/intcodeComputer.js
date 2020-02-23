@@ -16,7 +16,12 @@ const IntcodeComputer = () => {
           case 1:
             val1 = workingSet[workingSet[instructionPointer + 1]]
             val2 = workingSet[workingSet[instructionPointer + 2]]
-            workingSet[instructionPointer + 3] = val1 + val2
+            workingSet[workingSet[instructionPointer + 3]] = val1 + val2
+            break
+          case 2:
+            val1 = workingSet[workingSet[instructionPointer + 1]]
+            val2 = workingSet[workingSet[instructionPointer + 2]]
+            workingSet[workingSet[instructionPointer + 3]] = val1 * val2
             break
           case 99:
           default:

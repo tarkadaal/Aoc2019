@@ -26,6 +26,18 @@ describe('IntcodeComputer', () => {
     expect(result).toEqual([1, 0, 0, 2, 99])
   })
 
+  test('runs valid program with multiplication', () => {
+    const sut = IntcodeComputer()
+    const result = sut.runProgram([2, 0, 0, 3, 99])
+    expect(result).toEqual([2, 0, 0, 4, 99])
+  })
+
+  test('runs valid program with multiplication', () => {
+    const sut = IntcodeComputer()
+    const result = sut.runProgram([1, 1, 1, 4, 99, 5, 6, 0, 99])
+    expect(result).toEqual([30, 1, 1, 4, 2, 5, 6, 0, 99])
+  })
+
   /*
     things to test:
         what if the parameters point outside the array
